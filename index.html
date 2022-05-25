@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realme CRUD</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="container-nav">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">House</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Apartment</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Oficce</a></li>
+    </ul>
+    <ul id="mobile-demo" class="sidenav">
+      <li><a class="black-text" href="/index.html"><img class="responsive-img navimg" src="/images/Logo.png"></a>
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Property<i
+            class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <ul class="icons-navbar">
+          <li><img src="./images/01.svg" alt=""></li>
+          <li><img src="./images/02.svg" alt=""></li>
+          <li><img src="./images/02-1.svg" alt=""></li>
+          <li><img src="./images/04.svg" alt=""></li>
+        </ul>
+      </li>
+      <li><a href="#"><button>
+            <div>+</div>
+            <div>Add property</div>
+          </button></a></li>
+    </ul>
+
+    <div class="nav-container container">
+      <nav>
+        <div class="nav-wrapper white">
+          <div class="row options-nav">
+            <div class="col s6 m2">
+              <a href="index.html"><img class="responsive-img navimg" src="/images/Logo.png"></a>
+            </div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#" class="black-text">Home</a></li>
+              <li><a href="#" class="black-text">About</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Property<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#" class="black-text">Pages</a></li>
+              <li><a href="#" class="black-text">Blog</a></li>
+              <li><a href="#" class="black-text">Contact</a></li>
+              <li>
+                <ul class="icons-navbar responsive-img">
+                  <li><img src="./images/01.svg" alt=""></li>
+                  <li><img class="favorite" src="./images/02.svg" alt="favorite" title="favoritos"></li>
+                  <li><img src="./images/02-1.svg" alt=""></li>
+                  <li><img src="./images/04.svg" alt="carrito" title="carrito"></li>
+                </ul>
+              </li>
+              <li><a href="#"><button class="button-navbar">
+                    <div class="texbutton-navbar"><span>Add property</span></div>
+                  </button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+
+  <div class="container-firstimage">
+    <div class="form-search container">
+      <h1><span>Properties</span>Find The Perfect Place to Live With your Family</h1>
+      <form>
+        <div class="row">
+          <div class="form-buttoms">
+            <button id="button-sell">Sell</button>
+            <button id="button-buy">Buy</button>
+            <button id="button-rent">Rent</button>
+          </div>
+          <div class="col m3 s12">
+            <div class="input-field inline ">
+              <input id="text" type="text" class="validate" placeholder="Enter keyword here ...">
+            </div>
+          </div>
+          <div class="input-field col m3 s12">
+            <select id="select">
+              <option value="" disabled selected>Select Location</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="col m4 s12 inline setting-Icon">
+            <div class="col m4 s12 inline responsive-img"><img src="./images/setting-Icon.png" alt=""></div>
+            <a class="waves-effect waves-light btn"><i class="material-icons left inline">search</i> Search</a>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+  <section class="section1 ">
+    <div class="titlesection container">
+      <img src="./images/title-section1.png" class="responsive-img">
+    </div>
+    <div class="container-toggle container responsive-img">
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/parking-area 1.png" alt=""></div>
+        <div class="title-minicart">Parking Speace</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/pool.png" alt=""></div>
+        <div class="title-minicart">Swimming Pool</div>
+
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/privatsecurity.png" alt=""></div>
+        <div class="title-minicart">Privat Security</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/medicalcenter.png" alt=""></div>
+        <div class="title-minicart">Medical Center</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/library.png" alt=""></div>
+        <div class="title-minicart">Library Area</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/kingsbed.png" alt=""></div>
+        <div class="title-minicart">King Size Beds</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/smarthouses.png" alt=""></div>
+        <div class="title-minicart">Smart Homes</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+      <div class="mini-cart">
+        <div class="img-minicart"><img src="./images/Ellipseblue.png" alt=""></div>
+        <div class="icon-minicart"><img src="./images/playland.png" alt=""></div>
+        <div class="title-minicart">Kid’s Playland</div>
+        <div class="icon-bottom"><img src="./images/Ellipsewhite.png" alt=""></div>
+        <div class="img-bottom"><img src="./images/Right 1.png" alt=""></div>
+      </div>
+  </section>
+
+  <section class="section2">
+    <div class="titlesection container ">
+      <img src="./images/titl-section2.png" class="responsive-img">
+    </div>
+    <div class="container-toggle2 container" id="containerProperties">
+
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="titlesection">
+      <img src="./images/title-section3.png" class="responsive-img">
+    </div>
+    <div class="agents-section3 container">
+      <div class="agentcart-section3" responsive-img>
+        <img src="./images/agent1.svg">
+        <img src="./images/agent2.svg">
+        <img src="./images/agent3.svg">
+        <img src="./images/agent4.jpg">
+
+      </div>
+
+
+  </section>
+
+  <section class="section4 row container">
+    <div class="col s12 whoweare-section4 ">
+      <div class="whoweare-container">
+        <img src="./images/WHO WE ARE.png">
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section class="section5 container">
+    <div class="row">
+      <div class="col s12 apartment-plan responsive-img">
+        <img src="./images/Apartments plan.png">
+      </div>
+    </div>
+  </section>
+
+  <section class="section6">
+    <div class="images-section6 container responsive-img">
+      <img src="./images/Our Partners.png">
+
+  </section>
+
+  <div class="prefooter">
+    <div class="section-prefooter container responsive-img">
+      <img src="./images/Become a Agent.png">
+    </div>
+  </div>
+
+  <footer>
+    <div class="aparts"></div>
+    <div class="aparts"></div>
+    <div class="aparts"></div>
+    <div class="aparts"></div>
+  </footer>
+
+  <div class="post-footer">©2021 Realmod - Buy Sell or Rent. All rights reserved.</div>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/scripts/script.js" type="module"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+
+    });
+  </script>
+
+</body>
+
+</html>

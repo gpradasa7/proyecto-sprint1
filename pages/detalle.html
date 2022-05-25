@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rothko Painting</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+  <div class="container-nav">
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#!">House</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Apartment</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">Oficce</a></li>
+    </ul>
+    <ul id="mobile-demo" class="sidenav">
+      <li><a class="black-text" href="../index.html"><img class="responsive-img navimg" src="../images/Logo.png"></a>
+      </li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Property<i
+            class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="#">Pages</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+        <ul class="icons-navbar">
+          <li><img src="../images/01.svg" alt=""></li>
+          <li><img class="favorite" src="../images/02.svg" alt=""></li>
+          <li><img src="../images/02-1.svg" alt=""></li>
+          <li><img src="../images/04.svg" alt=""></li>
+        </ul>
+      </li>
+      <li><a href="#"><button>
+            <div>+</div>
+            <div>Add property</div>
+          </button></a></li>
+    </ul>
+
+    <div class="nav-container container">
+      <nav>
+        <div class="nav-wrapper white">
+          <div class="row options-nav">
+            <div class="col s6 m2">
+              <a href="../index.html"><img class="responsive-img navimg" src="../images/Logo.png"></a>
+            </div>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#" class="black-text">Home</a></li>
+              <li><a href="#" class="black-text">About</a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-trigger black-text" href="#!" data-target="dropdown1">Property<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+              <li><a href="#" class="black-text">Pages</a></li>
+              <li><a href="#" class="black-text">Blog</a></li>
+              <li><a href="#" class="black-text">Contact</a></li>
+              <li>
+                <ul class="icons-navbar responsive-img">
+                  <li><img src="../images/01.svg" alt=""></li>
+                  <li><img src="../images/02.svg" alt="favorite" title="favoritos"></li>
+                  <li><img src="../images/02-1.svg" alt=""></li>
+                  <li><img src="../images/04.svg" alt="carrito" title="carrito"></li>
+                </ul>
+              </li>
+              <li><a href="#"><button class="button-navbar">
+                    <div class="texbutton-navbar"><span>Add property</span></div>
+                  </button></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  </div>
+
+  <section class="section-detalle">
+
+  </section>
+
+  <main class="detalle">
+  </main>
+
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="../scripts/detalle.js" type="module"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.AutoInit();
+      document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+      });
+
+    });
+  </script>
+</body>
+
+</html>
