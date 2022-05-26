@@ -19,3 +19,13 @@ document.addEventListener("click", async ({ target }) => {
     window.location.href = "../pages/detalle.html";
   }
 });
+
+document.addEventListener("click", ({ target }) => {
+  if (target.classList.contains("navFavorite")) {
+    window.location.href = "../pages/favorites.html";
+  }
+
+  if (target.classList.contains("navCart")) {
+    window.location.href = "../pages/cart.html";
+  }
+});

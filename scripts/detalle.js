@@ -1,7 +1,11 @@
 import GetData from "../helpers/getData.js";
+import PostData from "../helpers/postData.js";
 
+const favSection = document.querySelector(".navFavorite");
+const cartSection = document.querySelector(".navCart");
 const detalle = document.querySelector(".detalle");
-
+let favArray = [];
+let carritoArray = [];
 document.addEventListener("DOMContentLoaded", () => {
   const properties = JSON.parse(localStorage.getItem("detalle"));
   const {
@@ -86,25 +90,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("click", async ({ target }) => {
   const data = await GetData("houses");
-  const {
-    typeproperty,
-    id,
-    name,
-    image1,
-    available,
-    price,
-    location,
-    roomnumber,
-    bathroomnumber,
-    squaremeters,
-  } = data;
-
+  //FAVORITOS
   if (target.classList.contains("favorites")) {
-    const favorites = data.find(item => item.id == target.id);
-    localStorage.setItem("favorites", JSON.stringify(favorites));
+    let favoritosStorage = data.find(item => item.id == target.id);
+    const key = JSON.parse(localStorage.getItem("favorites"));
+
+    if (key !== null) {
+      // si existe
+      PostData("favoritos", key);
+      key.unshift(favoritosStorage);
+      localStorage.setItem("favorites", JSON.stringify(key));
+    } else {
+      favArray.push(favoritosStorage);
+      localStorage.setItem("favorites", JSON.stringify(favArray));
+    }
+  }
+  //CARRITO
+
+  if (target.classList.contains("cart")) {
+    let cartStorage = data.find(item => item.id == target.id);
+    const key = JSON.parse(localStorage.getItem("cart"));
+
+    if (key !== null) {
+      // si existe
+      PostData("carrito", key);
+      key.unshift(cartStorage);
+      localStorage.setItem("cart", JSON.stringify(key));
+    } else {
+      carritoArray.push(cartStorage);
+      localStorage.setItem("cart", JSON.stringify(carritoArray));
+    }
+  }
+});
+
+document.addEventListener("click", ({ target }) => {
+  if (target.classList.contains("navFavorite")) {
+    window.location.href = "../pages/favorites.html";
   }
 
-  if (target.classList.contains("favorite")) {
-    window.location.href = "../pages/favorites.html";
+  if (target.classList.contains("navCart")) {
+    window.location.href = "../pages/cart.html";
   }
 });
