@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("click", ({ target }) => {
-  if (target.classList.contains("navCart")) {
+  if (target.classList.contains("navFavorite")) {
     window.location.href = "../pages/favorites.html";
   }
 

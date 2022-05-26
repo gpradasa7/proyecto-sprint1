@@ -115,10 +115,10 @@ document.addEventListener("click", async ({ target }) => {
       // si existe
       PostData("carrito", key);
       key.unshift(cartStorage);
-      localStorage.setItem("cart", JSON.stringify(key));
+      localStorage.setItem("carrito", JSON.stringify(key));
     } else {
       carritoArray.push(cartStorage);
-      localStorage.setItem("cart", JSON.stringify(carritoArray));
+      localStorage.setItem("carrito", JSON.stringify(carritoArray));
     }
   }
 });
